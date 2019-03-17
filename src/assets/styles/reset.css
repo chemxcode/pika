@@ -9,3 +9,6 @@ a {
 li {
     list-style: none;
 }
+html {
+    font-size: 50px;
+}
