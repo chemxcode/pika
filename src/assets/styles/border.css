@@ -1,0 +1,111 @@
+/*
+* 参照网址：http://blog.csdn.net/u011250652/article/details/70229058
+*
+* 上面的网址是参照下面这两个网址  下面的网址讲的是原理性的东西
+* 张鑫旭老师:设备像素比devicePixelRatio简单介绍:http://www.zhangxinxu.com/wordpress/2012/08/window-devicepixelratio/
+* 移动端1px解决方案:http://www.cnblogs.com/lunarorbitx/p/5287309.html
+*/
+
+/*
+* bug 1 : 若div容器有背景颜色，那么在有些设备下，边框的部分边缘颜色和背景颜色会在视觉上产生重合（其实没有重合，若背景颜色是白色则没有）
+* bug 2 : 边框线是覆盖div容器的，所以，需要div容器加一个padding为1px的像素
+*/
+
+/*手机端实现真正的一像素边框*/
+.border-1px, .border-bottom-1px, .border-top-1px, .border-left-1px, .border-right-1px {
+    position: relative;
+}
+/*线条颜色 黑色*/
+.border-1px::after, .border-bottom-1px::after, .border-top-1px::after, .border-left-1px::after, .border-right-1px::after {
+    /*background-color: #000;*/
+}
+/*底边边框一像素*/
+.border-bottom-1px::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform-origin: 0 0;
+    background-color:red;
+}
+
+/*上边边框一像素*/
+.border-top-1px::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform-origin: 0 0;
+    background-color:red;
+}
+
+/*左边边框一像素*/
+.border-left-1px::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    transform-origin: 0 0;
+    background-color:red;
+}
+/*右边边框1像素*/
+.border-right-1px::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    transform-origin: 0 0;
+    border: 1px solid red;
+}
+/*边框一像素*/
+.border-1px::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+/*设备像素比*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min-resolution: 2dppx) {
+    .border-bottom-1px::after, .border-top-1px::after {
+        transform: scaleY(0.5);
+    }
+    .border-left-1px::after, .border-right-1px::after {
+        transform: scaleX(0.5);
+    }
+    .border-1px::after {
+        width: 200%;
+        height: 200%;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+
+/*设备像素比*/
+@media only screen and (-webkit-min-device-pixel-ratio: 3.0), only screen and (min-resolution: 3dppx) {
+    .border-bottom-1px::after, .border-top-1px::after {
+        transform: scaleY(0.333);
+    }
+    .border-left-1px::after, .border-right-1px::after {
+        transform: scaleX(0.333);
+    }
+    .border-1px::after {
+        width: 300%;
+        height: 300%;
+        transform: scale(0.333);
+        transform-origin: 0 0;
+    }
+}
