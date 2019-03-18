@@ -96,41 +96,43 @@ export default {
   height 0
   padding-bottom 50%
   border-bottom 1px solid #000
-.icon
-  position relative
-  float left
-  height 0
-  width 25%
-  padding-bottom 25%
-  // background-color #333
-  // overflow hidden
-  .icon-img
-    position absolute
-    top 0
-    left 0
-    right 0
-    bottom .44rem
-    box-sizing border-box
-    padding .1rem
-    // background-color blue
-    .icon-img-content
-      display block
-      margin 0 auto
-      height 100%
-  .icon-desc
-    position absolute
-    left 0
-    right 0
-    bottom 0
-    line-height .44rem
-    height .44rem
-    color #333
-    font-size 12px
-    text-align center
-    // 单行文本截断
-    overflow hidden
-    white-space nowrap
-    text-overflow ellipsis
+.icons 
+  margin-top .1rem
+  .icon
+    position relative
+    float left
+    height 0
+    width 25%
+    padding-bottom 25%
+    // background-color #333
+    // overflow hidden
+    .icon-img
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom .44rem
+      box-sizing border-box
+      padding .1rem
+      // background-color blue
+      .icon-img-content
+        display block
+        margin 0 auto
+        height 100%
+    .icon-desc
+      position absolute
+      left 0
+      right 0
+      bottom 0
+      line-height .44rem
+      height .44rem
+      color #333
+      font-size 12px
+      text-align center
+      // 单行文本截断
+      overflow hidden
+      white-space nowrap
+      text-overflow ellipsis
 
 
 
