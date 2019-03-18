@@ -9,6 +9,11 @@ a {
 li {
     list-style: none;
 }
+body {
+    max-width: 600px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
 html {
     font-size: 50px;
 }

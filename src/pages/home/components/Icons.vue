@@ -33,24 +33,24 @@ export default {
       iconList: [{
         id: '0001',
         imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡kakakakakakak'
+        desc: '常用皮卡'
 
       }, {
         id: '0002',
         imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
+        desc: '影音皮卡'
       }, {
         id: '0003',
         imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
+        desc: '办公皮卡'
       }, {
         id: '0004',
         imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
+        desc: '学习皮卡'
         }, {
         id: '0005',
         imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
+        desc: '游戏皮卡'
       }, {
         id: '0006',
         imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
@@ -95,9 +95,10 @@ export default {
   // overflow hidden
   height 0
   padding-bottom 50%
-  border-bottom 1px solid #000
+  // border-bottom 1px solid #000
 .icons 
   margin-top .1rem
+  background-color #eee
   .icon
     position relative
     float left
