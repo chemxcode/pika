@@ -16,17 +16,20 @@ export default {
 <style scoped>
 .header {
     position: relative;
-    
+    background-color: rgb(84, 84, 139);
     height: 40px;
     text-align: center;
-    border-bottom: 1px solid #000;
+    /* border-bottom: 1px solid #000; */
     font-size: 12px;
     line-height: 40px;
+    
 }
 .header-left {
     position: absolute;
     width: 30px;
-
+}
+.header-icon {
+    color: aliceblue;
 }
 
 </style>
