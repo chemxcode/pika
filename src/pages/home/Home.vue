@@ -1,15 +1,9 @@
 <template>
     <div>
-<<<<<<< HEAD
         <!-- 嗯，这个优化好啦 -->
-        <home-header></home-header>
-        <home-swiper></home-swiper>
-        <home-icons></home-icons>
-=======
         <home-header :city="city"></home-header>
         <home-swiper :list="swiperList"></home-swiper>
         <home-icons :list="iconList"></home-icons>
->>>>>>> index-ajax
         <home-recommend></home-recommend>
         <home-weekend></home-weekend>
     </div>

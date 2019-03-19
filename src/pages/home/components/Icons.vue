@@ -33,50 +33,6 @@ export default {
   },
   data () {
     return {
-<<<<<<< HEAD
-      iconList: [{
-        id: '0001',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '常用皮卡'
-
-      }, {
-        id: '0002',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '影音皮卡'
-      }, {
-        id: '0003',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '办公皮卡'
-      }, {
-        id: '0004',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '学习皮卡'
-        }, {
-        id: '0005',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '游戏皮卡'
-      }, {
-        id: '0006',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }, {
-        id: '0007',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-        }, {
-        id: '0008',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }, {
-        id: '0009',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }, {
-        id: '0010',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }]
-=======
       swiperOption: {
         autoplay: false
       }
@@ -123,7 +79,6 @@ export default {
       //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
       //   desc: '皮卡'
       // }]
->>>>>>> index-ajax
     }
   },
   computed: {
