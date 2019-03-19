@@ -5,58 +5,55 @@
         </div>
         <div class="header-input">
             <span class="iconfont">&#xe632;</span>
-            输入网站穿梭主题
+            输入城市游玩主题
         </div>
-        <div class="header-right">类别
+        <router-link to="/city">
+        <div class="header-right">{{this.city}} 
             <span class="iconfont arrow-icon">&#xe64a;</span>
         </div>
+        </router-link>
     </div>
+    
 </template>
 <script>
 
 export default {
-    name: 'HomeHeader'
+    name: 'HomeHeader',
+    props: {
+        city: String
+    }
 }
 </script>
 
-
 <style scoped>
-/* 我想，我先不要用stylus */
-
 .header {
-    height: 40px;
     display: flex;
+    height: 60px;
     font-size: 12px;
-    background-color: #00bcd4;
-    color: #fff;
-    
-}
-.header .header-left {
-    width: 30px;
-    float: left;
-    line-height: 40px;
     text-align: center;
-
 }
-.header .header-input {
+.header-left {
+    width: 40px;
+    line-height: 60px;
+}
+.header-input {
     flex: 1;
-    height: 20px;
-    margin-top: 6px;
-    line-height: 20px;
-    background-color: #ccc;
-    padding: 4px;
-
-}
-
-.header .header-right {
-    width: 60px;
+    height: 40px;
+    background-color: rgb(245, 233, 233);
+    margin-top: 10px;
     line-height: 40px;
-    float: right;
-    text-align: center;
+    text-align: left;
+    padding-left: 12px;
 }
-.header .header-right .arrow-icon {
+.header-right {
+    width: 60px;
+    line-height: 60px;
+}
+.arrow-icon {
     font-size: 12px;
 }
+
+
 </style>
 
 
