@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="swiperOption">
       <swiper-slide v-for="(page, index) of pages" :key="index">
         <div class="icon" 
         v-for="item of page"
@@ -28,56 +28,63 @@
 <script>
 export default {
   name: "HomeIcons",
+  props: {
+    list: Array
+  },
   data () {
     return {
-      iconList: [{
-        id: '0001',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡kakakakakakak'
+      swiperOption: {
+        autoplay: false
+      }
 
-      }, {
-        id: '0002',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }, {
-        id: '0003',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }, {
-        id: '0004',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-        }, {
-        id: '0005',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }, {
-        id: '0006',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }, {
-        id: '0007',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-        }, {
-        id: '0008',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }, {
-        id: '0009',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }, {
-        id: '0010',
-        imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-        desc: '皮卡'
-      }]
+      // iconList: [{
+      //   id: '0001',
+      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
+      //   desc: '皮卡kakakakakakak'
+
+      // }, {
+      //   id: '0002',
+      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
+      //   desc: '皮卡'
+      // }, {
+      //   id: '0003',
+      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
+      //   desc: '皮卡'
+      // }, {
+      //   id: '0004',
+      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
+      //   desc: '皮卡'
+      //   }, {
+      //   id: '0005',
+      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
+      //   desc: '皮卡'
+      // }, {
+      //   id: '0006',
+      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
+      //   desc: '皮卡'
+      // }, {
+      //   id: '0007',
+      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
+      //   desc: '皮卡'
+      //   }, {
+      //   id: '0008',
+      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
+      //   desc: '皮卡'
+      // }, {
+      //   id: '0009',
+      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
+      //   desc: '皮卡'
+      // }, {
+      //   id: '0010',
+      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
+      //   desc: '皮卡'
+      // }]
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []
