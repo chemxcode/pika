@@ -49,6 +49,7 @@ export default {
   /* height: 60px; */
   height: 220px;
   background-color: blue;
+  /* touch-action: none; */
 
 }
 .icons .icon {
