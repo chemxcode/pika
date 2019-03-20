@@ -11,9 +11,7 @@
             <div class="item-info">
                 <p class="item-title">{{item.title}}</p>
                 <p class="item-desc">{{item.desc}} </p>
-                
             </div>
-            
         </li>
     </ul>
 
@@ -51,8 +49,13 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.title
+<style scoped>
+.title {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* .title
     line-height .8rem
     font-size .28rem
     background-color #eee
@@ -87,7 +90,7 @@ export default {
         text-overflow ellipsis
         
     
-
+ */
 
 
 

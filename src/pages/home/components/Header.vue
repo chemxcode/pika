@@ -31,6 +31,7 @@ export default {
     height: 60px;
     font-size: 12px;
     text-align: center;
+    background-color: #fff;
 }
 .header-left {
     width: 40px;

@@ -11,18 +11,7 @@
           <p class="icon-desc">{{item.desc}}</p>
         </div>
       </swiper-slide>
-      <!-- <swiper-slide>
-        <div class="icon">
-          <div class="icon-img">
-            <img class="icon-img-content" src="https://i.loli.net/2019/03/17/5c8e4a2686697.png">
-          </div>
-          <p class="icon-desc">废卡在吃</p>
-        </div>
-      </swiper-slide> -->
     </swiper>
-    
-    
-
   </div>
 </template>
 <script>
@@ -36,49 +25,6 @@ export default {
       swiperOption: {
         autoplay: false
       }
-
-      // iconList: [{
-      //   id: '0001',
-      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-      //   desc: '皮卡kakakakakakak'
-
-      // }, {
-      //   id: '0002',
-      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-      //   desc: '皮卡'
-      // }, {
-      //   id: '0003',
-      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-      //   desc: '皮卡'
-      // }, {
-      //   id: '0004',
-      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-      //   desc: '皮卡'
-      //   }, {
-      //   id: '0005',
-      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-      //   desc: '皮卡'
-      // }, {
-      //   id: '0006',
-      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-      //   desc: '皮卡'
-      // }, {
-      //   id: '0007',
-      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-      //   desc: '皮卡'
-      //   }, {
-      //   id: '0008',
-      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-      //   desc: '皮卡'
-      // }, {
-      //   id: '0009',
-      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-      //   desc: '皮卡'
-      // }, {
-      //   id: '0010',
-      //   imgUrl: 'https://i.loli.net/2019/03/17/5c8e4a2686697.png',
-      //   desc: '皮卡'
-      // }]
     }
   },
   computed: {
@@ -97,8 +43,35 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-.icons >>> .swiper-container
+<style scoped>
+.icons {
+  /* display: flex; */
+  /* height: 60px; */
+  height: 220px;
+  background-color: blue;
+
+}
+.icons .icon {
+  position: relative;
+  float: left;
+  background-color: #fff;
+  width: 25%;
+  height: 110px;
+}
+.icon-img {
+  width: 60px;
+  height: 60px;
+  /* background-color: blue; */
+  margin: 10px auto;
+}
+.icon-img-content {
+  height: 60px;
+}
+.icon-desc {
+  text-align: center;
+}
+
+/* .icons >>> .swiper-container
   // overflow hidden
   height 0
   padding-bottom 50%
@@ -140,7 +113,7 @@ export default {
       // 单行文本截断
       overflow hidden
       white-space nowrap
-      text-overflow ellipsis
+      text-overflow ellipsis */
 
 
 

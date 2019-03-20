@@ -49,14 +49,14 @@ export default {
     background-color #fff !important
 .wrapper
     width 100%
-    height 120px
+    height 160px
     // overflow hidden
     // padding-bottom 20%
     background-color #eee
     
     .swiper-img
         width 100%
-        height 120px
+        height 160px
 
 </style>
 

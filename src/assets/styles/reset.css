@@ -13,6 +13,7 @@ body {
     max-width: 600px;
     /* border: 1px solid #000; */
     margin: 0 auto;
+    background-color: rgb(226, 212, 212);
 }
 /* html {
     font-size: 50px;

@@ -5,7 +5,7 @@
         <home-swiper :list="swiperList"></home-swiper>
         <home-icons :list="iconList"></home-icons>
         <home-recommend></home-recommend>
-        <home-weekend></home-weekend>
+        <!-- <home-weekend></home-weekend> -->
     </div>
 </template>
 
