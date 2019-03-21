@@ -9,8 +9,11 @@
     ref="search"
     v-show="keyword">
         <ul>
-            <li class="search-item" v-for="item of list" 
-            :key="item.name">{{item.name}}</li>
+            <li class="search-item" 
+            v-for="item of list" 
+            :key="item.name"
+            @click="handleCityClick(item.name)">
+            {{item.name}}</li>
             <li v-show="hasNoData" class="search-item">无结果</li>
         </ul>
     </div>
@@ -22,7 +25,6 @@ export default {
     name: "CitySearch",
     props: {
         cities: Object
-
     },
     data () {
         return {
@@ -30,6 +32,15 @@ export default {
             list: [],
             timer: null
         }
+    },
+    methods: {
+        handleCityClick (city) {
+            // this.$store.dispatch('changeCity', city)
+            this.$store.commit('changeCity', city)
+            // alert(city)
+            // this.$router.push('/')
+        }
+
     },
     watch: {
         /* 搜索功能 函数节流 */

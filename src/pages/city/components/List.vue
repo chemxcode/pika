@@ -6,7 +6,7 @@
                 <div class="button-list">
                     <div class="button-wrapper">
                         <div class="button">
-                            beijing
+                            {{ this.$store.state.city }}
                         </div>
                     </div>
                 </div>
@@ -16,7 +16,8 @@
                 <div class="button-list">
                     <div class="button-wrapper"
                     v-for="item of hot" 
-                    :key="item.id">
+                    :key="item.id"
+                    @click="handleCityClick(item.name)">
                         <div class="button">
                             {{item.name}}
                         </div>
@@ -49,37 +50,12 @@
                 <div class="item-list">
                     <ul>
                         <li class="item"
-                        v-for="innerItem of item"
-                        :key="innerItem.id">{{innerItem.name}}</li>
-                        <!-- <li class="item">afajdg</li>
-                        <li class="item">fadfag</li>
-                        <li class="item">fafad</li>
-                        <li class="item">fad</li>
-                        <li class="item">ada</li>
-                        <li class="item">ana</li>
-                        <li class="item">afajdg</li>
-                        <li class="item">fadfag</li>
-                        <li class="item">fafad</li>
-                        <li class="item">fad</li>
-                        <li class="item">ada</li>
-                        <li class="item">ana</li>
-                        <li class="item">afajdg</li>
-                        <li class="item">fadfag</li>
-                        <li class="item">fafad</li>
-                        <li class="item">fad</li>
-                        <li class="item">ada</li>
-                        <li class="item">ana</li>
-                        <li class="item">afajdg</li>
-                        <li class="item">fadfag</li>
-                        <li class="item">fafad</li>
-                        <li class="item">fad</li>
-                        <li class="item">ada</li>
-                        <li class="item">ana</li>
-                        <li class="item">afajdg</li>
-                        <li class="item">fadfag</li>
-                        <li class="item">fafad</li>
-                        <li class="item">fad</li>
-                        <li class="item">ada</li> -->
+                            v-for="innerItem of item"
+                            :key="innerItem.id"
+                            @click="handleCityClick(innerItem.name)">
+                        {{innerItem.name}}
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -95,6 +71,16 @@ export default {
         cities: Object,
         letter: String
         
+    },
+    methods: {
+        handleCityClick (city) {
+            // this.$store.dispatch('changeCity', city)
+            this.$store.commit('changeCity', city)
+            // alert(city)
+            // this.router.push('/')
+            /* 跳转首页功能未实现 */
+        }
+
     },
     mounted () {
         this.scroll = new Bscroll(this.$refs.wrapper)
