@@ -76,7 +76,8 @@ export default {
         handleCityClick (city) {
             // this.$store.dispatch('changeCity', city)
             this.$store.commit('changeCity', city)
-            // alert(city)
+            alert(city)
+            // click 在调到手机模式时无响应
             // this.router.push('/')
             /* 跳转首页功能未实现 */
         }
