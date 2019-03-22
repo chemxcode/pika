@@ -1,6 +1,5 @@
 <template>
     <div>
-        <!-- 嗯，这个优化好啦 -->
         <home-header></home-header>
         <home-swiper :list="swiperList"></home-swiper>
         <home-icons :list="iconList"></home-icons>
@@ -37,8 +36,8 @@ export default {
     },
     methods: {
         getHomeInfo () {
-            axios.get('/mock/index.json')
-            /* 先不配置代理 */
+            axios.get('/api/index.json')
+            /* 配置代理 */
                 .then(this.getHomeInfoSucc)
         },
         getHomeInfoSucc (res) {
