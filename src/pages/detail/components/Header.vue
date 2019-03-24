@@ -61,6 +61,11 @@ export default {
     },
     activated () {
         window.addEventListener('scroll', this.handleScroll)
+    },
+
+    /* 卸磨杀驴 全局事件解绑*/
+    deactivated () {
+        window.removeEventListener('scroll', this.handleScroll)
     }
     
 }
