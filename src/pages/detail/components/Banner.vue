@@ -1,5 +1,7 @@
 <template>
-    <div class="banner">
+<div>
+    <div class="banner"
+    @click="handleBannerClick">
         <img class="banner-img" 
         src="https://i.loli.net/2019/03/23/5c95c3459a02d.jpg">
         <div class="banner-info">
@@ -9,11 +11,38 @@
                 33</div>
         </div>
     </div>
+    <common-gallary 
+    :imgs="imgs"
+    v-show="showGallary"
+    @close="handleGallaryClose">
+    </common-gallary>
+</div>
 </template>
 
 <script>
+import CommonGallary from 'common/gallary/Gallary.vue'
 export default {
-    name: 'Banner'
+    name: 'Banner',
+    data () {
+        return {
+            showGallary: false,
+            imgs: ['http://img2.imgtn.bdimg.com/it/u=2313427157,1892994939&fm=26&gp=0.jpg',
+            'http://img4.imgtn.bdimg.com/it/u=3107979165,3503926577&fm=26&gp=0.jpg']
+
+        }
+        
+    },
+    methods: {
+        handleBannerClick () {
+            this.showGallary = true
+        },
+        handleGallaryClose () {
+            this.showGallary = false
+        }
+    },
+    components: {
+        CommonGallary
+    }
 }
 </script>
 
