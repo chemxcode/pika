@@ -3,16 +3,16 @@
     <div class="banner"
     @click="handleBannerClick">
         <img class="banner-img" 
-        src="https://i.loli.net/2019/03/23/5c95c3459a02d.jpg">
+        :src="bannerImg">
         <div class="banner-info">
-            <div class="banner-title">4a景区aaaaaaaaaaaaaaa</div>
+            <div class="banner-title">{{this.signtName}}</div>
             <div class="banner-number">
                 <!-- <span class="iconfont back-icon">&#xe624;</span> -->
-                33</div>
+                {{this.bannerImgs.length}}</div>
         </div>
     </div>
     <common-gallary 
-    :imgs="imgs"
+    :imgs="bannerImgs"
     v-show="showGallary"
     @close="handleGallaryClose">
     </common-gallary>
@@ -23,11 +23,16 @@
 import CommonGallary from 'common/gallary/Gallary.vue'
 export default {
     name: 'Banner',
+    props: {
+        signtName: String,
+        bannerImg: String,
+        bannerImgs: Array
+    },
     data () {
         return {
             showGallary: false,
-            imgs: ['http://img2.imgtn.bdimg.com/it/u=2313427157,1892994939&fm=26&gp=0.jpg',
-            'http://img4.imgtn.bdimg.com/it/u=3107979165,3503926577&fm=26&gp=0.jpg']
+            // imgs: ['http://img2.imgtn.bdimg.com/it/u=2313427157,1892994939&fm=26&gp=0.jpg',
+            // 'http://img4.imgtn.bdimg.com/it/u=3107979165,3503926577&fm=26&gp=0.jpg']
 
         }
         
