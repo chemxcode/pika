@@ -1,4 +1,7 @@
-# travel
+# pika
+一个收集皮卡丘周边的 vue app
+
+
 
 ## Project setup
 ```
