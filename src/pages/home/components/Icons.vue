@@ -48,14 +48,14 @@ export default {
   /* display: flex; */
   /* height: 60px; */
   height: 220px;
-  background-color: blue;
+  background-color: #fde570;
   touch-action: none;
 
 }
 .icons .icon {
   position: relative;
   float: left;
-  background-color: #fff;
+  background-color: #fde570;
   width: 25%;
   height: 110px;
 }

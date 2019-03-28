@@ -3,7 +3,7 @@
         <home-header></home-header>
         <home-swiper :list="swiperList"></home-swiper>
         <home-icons :list="iconList"></home-icons>
-        <home-recommend></home-recommend>
+        <home-friends></home-friends>
         <!-- <home-weekend></home-weekend> -->
     </div>
 </template>
@@ -12,7 +12,7 @@
 import HomeHeader from './components/Header.vue'
 import HomeSwiper from './components/Swiper.vue'
 import HomeIcons from './components/Icons.vue'
-import HomeRecommend from './components/Recommend.vue'
+import HomeFriends from './components/Friends.vue'
 import HomeWeekend from './components/Weekend.vue'
 // 局部组件
 
@@ -23,7 +23,7 @@ export default {
         HomeHeader,
         HomeSwiper,
         HomeIcons,
-        HomeRecommend,
+        HomeFriends,
         HomeWeekend
     },
     data () {
@@ -64,7 +64,8 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style scoped>
+
 
 
 </style>

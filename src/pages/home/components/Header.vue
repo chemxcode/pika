@@ -5,7 +5,7 @@
         </div>
         <div class="header-input">
             <span class="iconfont">&#xe632;</span>
-            输入城市游玩主题
+            输入皮卡的小心情
         </div>
         <router-link to="/city">
         <div class="header-right">
@@ -33,7 +33,7 @@ export default {
     height: 60px;
     font-size: 12px;
     text-align: center;
-    background-color: #fff;
+    background-color: #fde570;
 }
 .header-left {
     width: 40px;

@@ -1,5 +1,8 @@
 # pika
-一个收集皮卡丘周边的 vue app
+一个使用Vue cli 3制作的收集皮卡丘周边的 vue app
+
+皮卡肤色 #fde570
+
 
 
 

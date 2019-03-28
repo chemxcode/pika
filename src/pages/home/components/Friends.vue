@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title">皮卡建议</div>
+    <div class="title">皮卡小伙伴</div>
     <ul>
       <router-link class="item" tag="li"
       v-for="item of recommendList" 
@@ -11,7 +11,7 @@
           <img :src="item.imgUrl">
         </div>
         <div class="item-info">
-          <p class="item-title">{{item.title}}</p>
+          <p class="item-name">{{item.name}}</p>
           <p class="item-desc">{{item.desc}}</p>
           <!-- <button class="item-button">查看详情</button> -->
         </div>
@@ -28,44 +28,44 @@ export default {
       recommendList: [
         {
           id: "0001",
-          imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          title: "标题",
-          desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
+          imgUrl: "https://avatars3.githubusercontent.com/u/29108504?s=460&v=4",
+          name: "柯南",
+          desc: "死神小学生"
         },
         {
           id: "0002",
           imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          title: "标题",
+          name: "标题",
           desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
         },
         {
           id: "0003",
           imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          title: "标题",
+          name: "标题",
           desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
         },
         {
           id: "0005",
           imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          title: "标题",
+          name: "标题",
           desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
         },
         {
           id: "0006",
           imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          title: "标题",
+          name: "标题",
           desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
         },
         {
           id: "0007",
           imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          title: "标题",
+          name: "标题",
           desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
         },
         {
           id: "0008",
           imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          title: "标题",
+          name: "标题",
           desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
         }
       ]
@@ -84,7 +84,7 @@ export default {
   height: 80px;
   width: 98%;
   margin: 0 auto;
-  background-color: rgb(247, 242, 241);
+  background-color: #fde570;
   position: relative;
 }
 .item-img-wrapper {
@@ -92,7 +92,7 @@ export default {
   margin-left: 5px;
   height: 70px;
   width: 70px;
-  background-color: blue;
+  /* background-color: blue; */
   margin-top: 5px;
 }
 .item-img-wrapper img {
@@ -105,11 +105,12 @@ export default {
   margin-top: 4px;
   font-size: 12px;
 }
-.item-info .item-title {
-  color: aqua;
+.item-info .item-name {
+  padding: 4px;
+  color: rgb(255, 72, 0);
 }
 .item-info .item-desc {
-  color: #ccc;
+  color: rgb(0, 0, 0);
   padding: 4px;
 }
 .item-button {
