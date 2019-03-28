@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="friends">
     <div class="title">皮卡小伙伴</div>
     <ul>
       <router-link class="item" tag="li"
@@ -28,26 +28,26 @@ export default {
       recommendList: [
         {
           id: "0001",
-          imgUrl: "https://avatars3.githubusercontent.com/u/29108504?s=460&v=4",
+          imgUrl: "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2588244565,3365893339&fm=26&gp=0.jpg",
           name: "柯南",
           desc: "死神小学生"
         },
         {
           id: "0002",
-          imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
+          imgUrl: "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1222101153,1877956273&fm=26&gp=0.jpg",
           name: "标题",
           desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
         },
         {
           id: "0003",
-          imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          name: "标题",
+          imgUrl: "http://img1.imgtn.bdimg.com/it/u=2874328332,686638447&fm=26&gp=0.jpg",
+          name: "小黄人",
           desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
         },
         {
           id: "0005",
-          imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          name: "标题",
+          imgUrl: "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1556432944,2080824896&fm=11&gp=0.jpg",
+          name: "步美",
           desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
         },
         {
@@ -75,6 +75,9 @@ export default {
 </script>
 
 <style scoped>
+.friends {
+  background-color: #fde570;
+}
 .title {
   font-size: 14px;
   padding: 6px;
@@ -86,6 +89,7 @@ export default {
   margin: 0 auto;
   background-color: #fde570;
   position: relative;
+  border-bottom: 1px solid rgb(197, 250, 7);
 }
 .item-img-wrapper {
   position: absolute;

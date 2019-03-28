@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/pages/home/Home.vue'
 import City from '@/pages/city/City.vue'
 import Detail from '@/pages/detail/Detail.vue'
+import About from '@/pages/about/About.vue'
 
 Vue.use(Router)
 
@@ -20,6 +21,10 @@ export default new Router({
       path: '/detail/:id',
       name: 'detail',
       component: Detail
+    }, {
+      path: '/about',
+      name: 'about',
+      component: About
     }],
     // 页面切换始终到顶部 
     scrollBehavior (to, from, savedPosition) {

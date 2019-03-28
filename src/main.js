@@ -16,3 +16,6 @@ new Vue({
   store,
   render: function (h) { return h(App) }
 }).$mount('#app')
+
+
+// 路由就是根据网址不同，返回不同内容
