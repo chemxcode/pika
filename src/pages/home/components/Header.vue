@@ -5,8 +5,10 @@
         </div>
         <div class="header-input">
             <span class="iconfont">&#xe632;</span>
-            输入皮卡的小心情
+            <input type="text" placeholder="这是一个无用的搜索框">   
         </div>
+        <!-- <input class="header-input" type="text" placeholder="这是一个假的搜索框">
+        <span class="iconfont">&#xe632;</span> -->
         <router-link to="/city">
         <div class="header-right">
             <!-- {{this.city}}  -->
@@ -32,25 +34,44 @@ export default {
     display: flex;
     height: 60px;
     font-size: 12px;
-    text-align: center;
+    /* text-align: center; */
     background-color: #fde570;
 }
 .header-left {
     width: 40px;
     line-height: 60px;
+    text-align: center;
 }
 .header-input {
     flex: 1;
-    height: 40px;
-    background-color: rgb(245, 233, 233);
+    /* height: 30px;
+    background-color: rgb(245, 233, 233); */
     margin-top: 10px;
-    line-height: 40px;
+    margin-bottom: 10px;
+    /* line-height: 30px; */
     text-align: left;
-    padding-left: 12px;
+    /* padding-left: 12px; */
+    position: relative;
+}
+.header-input input {
+    /* padding-top: 4px;
+    padding-bottom: 4px; */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.header-input .iconfont {
+    display: inline;
+    position: absolute;
+    left: 4px;
+    line-height: 42px;
+   
 }
 .header-right {
-    width: 60px;
+    width: 80px;
     line-height: 60px;
+    text-align: center;
 }
 .arrow-icon {
     font-size: 12px;
