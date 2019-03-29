@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
-/dist
+
+# 为方便部署不再忽略dist目录
+# /dist
 
 # local env files
 .env.local

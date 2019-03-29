@@ -1,0 +1,55 @@
+{
+    "ret": true,
+    "data": {
+        
+        "swiperList": [
+            {
+                "id": "0001",
+                "imgUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553523747363&di=34760bc1bfaeb7d0829054f3e29eb0b2&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fcb8065380cd79123cefba6fba7345982b2b78021.jpg"
+            }, {
+                "id": "002",
+                "imgUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553523833169&di=57e14a13418a8394df1f07d3cc5cab91&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F1c950a7b02087bf472e7c28bf9d3572c11dfcf4d.jpg"
+            }, {
+              "id": "003",
+              "imgUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553523931468&di=8aef038cd8f96b83d4751a5dca99737d&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F0b7b02087bf40ad15a08138d5c2c11dfa8eccef4.jpg"
+            }
+        ],
+        "iconList": [{
+            "id": "0001",
+            "imgUrl": "https://i.loli.net/2019/03/20/5c9191ef6fdb4.png",
+            "desc": "开心"
+          }, {
+            "id": "0002",
+            "imgUrl": "https://i.loli.net/2019/03/20/5c9191ef51ebf.png",
+            "desc": "蠢萌"
+          }, {
+            "id": "0003",
+            "imgUrl": "https://i.loli.net/2019/03/20/5c9191ef51ebf.png",
+            "desc": "可怜"
+          }, {
+            "id": "0004",
+            "imgUrl": "https://i.loli.net/2019/03/20/5c9191ef6fdb4.png",
+            "desc": "乐观"
+            }, {
+            "id": "0005",
+            "imgUrl": "https://i.loli.net/2019/03/20/5c9191ef6fdb4.png",
+            "desc": "哭唧唧"
+          }, {
+            "id": "0006",
+            "imgUrl": "https://i.loli.net/2019/03/20/5c9191ef51ebf.png",
+            "desc": "小调皮"
+          }, {
+            "id": "0007",
+            "imgUrl": "https://i.loli.net/2019/03/20/5c9191ef51ebf.png",
+            "desc": "小可爱"
+            }, {
+            "id": "0008",
+            "imgUrl": "https://i.loli.net/2019/03/20/5c9191ef6fdb4.png",
+            "desc": "哇哈哈"
+          }, {
+            "id": "0009",
+            "imgUrl": "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
+            "desc": "皮卡"
+          }]
+    }
+}

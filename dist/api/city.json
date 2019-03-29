@@ -1,0 +1,169 @@
+{
+    "ret": true,
+    "data": {
+        "hotCities": [
+            {
+                "id": 1,
+                "spell": "beijing",
+                "name": "北京"
+            },
+            {
+                "id": 2,
+                "spell": "beijing",
+                "name": "北京1"
+            },
+            {
+                "id": 3,
+                "spell": "beijing",
+                "name": "北京2"
+            },
+            {
+                "id": 4,
+                "spell": "beijing",
+                "name": "北京3"
+            }
+        ],
+        "cities": {
+            "A": [
+                {
+                    "id": 5,
+                    "spell": "beijing",
+                    "name": "北京5"
+                },
+                {
+                    "id": 6,
+                    "spell": "beijing",
+                    "name": "北京6"
+                }
+            ],
+            "B": [
+                {
+                    "id": 7,
+                    "spell": "beijing",
+                    "name": "北京7"
+                },
+                {
+                    "id": 8,
+                    "spell": "beijing",
+                    "name": "北京8"
+                },
+                {
+                    "id": 9,
+                    "spell": "beijing",
+                    "name": "北京9"
+                },
+                {
+                    "id": 10,
+                    "spell": "beijing",
+                    "name": "北京10"
+                },
+                {
+                    "id": 11,
+                    "spell": "beijing",
+                    "name": "北11"
+                },
+                {
+                    "id": 12,
+                    "spell": "beijing",
+                    "name": "北京12"
+                }
+            ],
+            "C": [
+                {
+                    "id": 17,
+                    "spell": "beijing",
+                    "name": "1北京7"
+                },
+                {
+                    "id": 18,
+                    "spell": "beijing",
+                    "name": "1北京8"
+                },
+                {
+                    "id": 19,
+                    "spell": "beijing",
+                    "name": "1北京9"
+                },
+                {
+                    "id": 110,
+                    "spell": "beijing",
+                    "name": "1北京10"
+                },
+                {
+                    "id": 111,
+                    "spell": "beijing",
+                    "name": "1北11"
+                },
+                {
+                    "id": 112,
+                    "spell": "beijing",
+                    "name": "1北京12"
+                }
+            ],
+            "D": [
+                {
+                    "id": 117,
+                    "spell": "1beijing",
+                    "name": "11北京7"
+                },
+                {
+                    "id": 118,
+                    "spell": "1beijing",
+                    "name": "11北京8"
+                },
+                {
+                    "id": 119,
+                    "spell": "1beijing",
+                    "name": "11北京9"
+                },
+                {
+                    "id": 1110,
+                    "spell": "1beijing",
+                    "name": "11北京10"
+                },
+                {
+                    "id": 1111,
+                    "spell": "1beijing",
+                    "name": "11北11"
+                },
+                {
+                    "id": 1112,
+                    "spell": "1beijing",
+                    "name": "11北京12"
+                }
+            ],
+            "E": [
+                {
+                    "id": 9117,
+                    "spell": "91beijing",
+                    "name": "119北京7"
+                },
+                {
+                    "id": 9118,
+                    "spell": "91beijing",
+                    "name": "119北京8"
+                },
+                {
+                    "id": 9119,
+                    "spell": "91beijing",
+                    "name": "119北京9"
+                },
+                {
+                    "id": 91110,
+                    "spell": "91beijing",
+                    "name": "119北京10"
+                },
+                {
+                    "id": 91111,
+                    "spell": "91beijing",
+                    "name": "119北11"
+                },
+                {
+                    "id": 91112,
+                    "spell": "91beijing",
+                    "name": "119北京12"
+                }
+            ]
+        }
+    }
+}
