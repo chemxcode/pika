@@ -1,4 +1,4 @@
-# pika
+# PiKa
 一个使用Vue cli 3制作的收集皮卡丘周边的 vue app
 
 皮卡肤色 #fde570
@@ -6,7 +6,10 @@
 预览
 http://217.163.11.107
 
+## 关于模拟数据正考虑解耦分拆
 
+- home.json 首页用到的 json 文件
+- detail.json 详情页用到的 json 文件
 ## Project setup
 ```
 npm install

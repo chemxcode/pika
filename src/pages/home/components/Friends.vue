@@ -3,7 +3,7 @@
     <div class="title">皮卡小伙伴</div>
     <ul>
       <router-link class="item" tag="li"
-      v-for="item of recommendList" 
+      v-for="item of list" 
       :key="item.id"
       :to="'/detail/' + item.id"
       >
@@ -22,53 +22,14 @@
 </template>
 <script>
 export default {
-  name: "HomeRecommend",
+  name: "HomeFriend",
+  props: {
+    list: Array
+  },
   data() {
     return {
-      recommendList: [
-        {
-          id: "0001",
-          imgUrl: "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2588244565,3365893339&fm=26&gp=0.jpg",
-          name: "柯南",
-          desc: "死神小学生"
-        },
-        {
-          id: "0002",
-          imgUrl: "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1222101153,1877956273&fm=26&gp=0.jpg",
-          name: "标题",
-          desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
-        },
-        {
-          id: "0003",
-          imgUrl: "http://img1.imgtn.bdimg.com/it/u=2874328332,686638447&fm=26&gp=0.jpg",
-          name: "小黄人",
-          desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
-        },
-        {
-          id: "0005",
-          imgUrl: "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1556432944,2080824896&fm=11&gp=0.jpg",
-          name: "步美",
-          desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
-        },
-        {
-          id: "0006",
-          imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          name: "标题",
-          desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
-        },
-        {
-          id: "0007",
-          imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-          name: "标题",
-          desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
-        },
-        // {
-        //   id: "0008",
-        //   imgUrl: "https://i.loli.net/2019/03/17/5c8e4a2686697.png",
-        //   name: "标题",
-        //   desc: "描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡描述皮卡"
-        // }
-      ]
+
+     
     };
   }
 };

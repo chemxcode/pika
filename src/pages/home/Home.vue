@@ -3,7 +3,7 @@
         <home-header></home-header>
         <home-swiper :list="swiperList"></home-swiper>
         <home-icons :list="iconList"></home-icons>
-        <home-friends></home-friends>
+        <home-friends :list="friendList"></home-friends>
         <!-- <home-weekend></home-weekend> -->
         <home-footer></home-footer>
     </div>
@@ -19,6 +19,7 @@ import HomeFooter from './components/Footer.vue'
 // 局部组件
 
 import axios from 'axios'
+import { constants } from 'fs';
 export default {
     name: 'Home',
     components: {
@@ -34,7 +35,7 @@ export default {
             // city: '',
             swiperList: [],
             iconList: [],
-            recommendList: []
+            friendList: []
         }
     },
     methods: {
@@ -52,6 +53,9 @@ export default {
                 // this.city = data.city
                 this.swiperList = data.swiperList
                 this.iconList = data.iconList
+                this.friendList = data.friendList
+                console.log(this.friendList)
+
                 
                 // console.log(this.city)
             }

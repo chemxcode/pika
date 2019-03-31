@@ -4,6 +4,7 @@ function resolve(dir) {
 }
 
 module.exports = {
+  // build后文件产生目录
   outputDir: 'pika',
   // 生产环境 sourceMap
   productionSourceMap: false,
