@@ -4,12 +4,15 @@ function resolve(dir) {
 }
 
 module.exports = {
+  outputDir: 'pika',
+  // 生产环境 sourceMap
+  productionSourceMap: false,
   devServer: {
     proxy: {
       '/api': {
         target: 'http://localhost:8080/',
         pathRewrite: {
-          '^/api': '/mock/'
+          '^/api': '/api/'
         },
         ws: true,
         changeOrigin: true
