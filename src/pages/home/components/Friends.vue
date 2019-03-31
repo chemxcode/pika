@@ -28,8 +28,6 @@ export default {
   },
   data() {
     return {
-
-     
     };
   }
 };
@@ -43,6 +41,9 @@ export default {
   font-size: 14px;
   padding: 6px;
   /* border-bottom: 1px solid #000; */
+}
+ul {
+  height: 600px;
 }
 .item {
   height: 80px;
