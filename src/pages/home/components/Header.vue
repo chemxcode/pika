@@ -36,6 +36,7 @@ export default {
     font-size: 12px;
     /* text-align: center; */
     background-color: #fde570;
+    border-bottom: 4px solid red;
 }
 .header-left {
     width: 40px;

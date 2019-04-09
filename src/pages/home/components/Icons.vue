@@ -50,6 +50,8 @@ export default {
   height: 220px;
   background-color: #fde570;
   touch-action: none;
+  border-bottom: 4px solid red;
+  
 
 }
 .icons .icon {
@@ -58,7 +60,17 @@ export default {
   background-color: #fde570;
   width: 25%;
   height: 110px;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  box-sizing: border-box;
 }
+.icons .icon:nth-of-type(4n+1) {
+  border-left: 1px solid #f40;
+}
+.icons .icon:nth-of-type(9n) {
+  border-left: none;
+}
+
 .icon-img {
   width: 60px;
   height: 60px;

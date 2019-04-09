@@ -36,6 +36,7 @@ export default {
 <style scoped>
 .friends {
   background-color: #fde570;
+  border-bottom: 4px solid red;
 }
 .title {
   font-size: 14px;
